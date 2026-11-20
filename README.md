@@ -1,5 +1,6 @@
 # LAB_6
-
+ASLONOV XISRAV
+A85204925065
 P password min length-7
 M name max characters-25
 S students in JSON-5
