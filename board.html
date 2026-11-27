@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Student Portal - Marks Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Student Marks Board</h1>
+    </header>
+
+    <main>
+        <section aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome</h2>
+            <p id="welcome-message">Welcome, student</p>
+            <p id="load-time">Load time: </p>
+        </section>
+
+        <section aria-labelledby="marks-heading">
+            <h2 id="marks-heading">Marks Board</h2>
+
+            <label for="sort-options">Sort students</label>
+            <select id="sort-options" name="sortOptions">
+                <option value="name">Name A–Z</option>
+                <option value="marks">Marks highest first</option>
+            </select>
+
+            <p id="board-message" aria-live="polite"></p>
+
+            <div class="table-container">
+                <table id="marks-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Marks</th>
+                            <th scope="col">City</th>
+                            <th scope="col">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody id="students-table-body">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <button type="button" id="back-button">Back</button>
+    </main>
+</body>
+</html>
